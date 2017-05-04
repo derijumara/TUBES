@@ -7,7 +7,7 @@
                     <td>Kode Laporan </td>
                     <td>:</td>
                     <td><input name="kode_laporan" type="text"  size="15" class="form-control"/></td>
-                    </tr>
+                    </tr>   
             		<tr>
                     <td>Tanggal Melapor </td>
                     <td>:</td>
