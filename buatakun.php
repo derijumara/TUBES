@@ -1,30 +1,39 @@
-<?php
-defined('BASEPATH') OR exit('No direct script access allowed');
-
-class Buatakun extends CI_Controller {
-
-	function __construct(){
-		parent::__construct();
-		$this->load->model('login_user');
-	}
-	public function index()
-	{
-		$this->template->load('static_login','buatakun');
-	}
-	public function insert(){
-		$data = array(	
-						'username'=> $this->input->post('username'),
-						'Password'=> md5($this->input->post('password')),
-						// saya menambahkan di bagian sini
-						'email'=> $this->input->post('email'),
-						'nomerhp'=> $this->input->post('nomerhp'),
-						'jeniskelamin'=> $this->input->post('jeniskelamin'));
-		
-				$insert = $this->login_user->insertAkun('user',$data);
-				if ($insert > 0){
-				redirect(base_url('index.php/login'));
-				}else{
-					echo '</script> gagal di input </script>';
-				}	
-	}
-}
+<div align="right">
+	<form  id="form1" method="post" action="<?php echo site_url('buatakun/insert')?>">
+				<table>
+				<br>
+				<br>
+				<br>
+				<tr>
+				<td><input type="text" name="username" class="form-control" placeholder="Masukan username"/></td>
+				</tr>
+				<tr>
+				<td><input type="Password" name="password" class="form-control" placeholder="Masukan Password"/></td>
+				</tr>
+				<tr>
+				<td><input type="text" name="email" class="form-control" placeholder="Masukan E-mail"/></td>
+				</tr>
+            	<tr>
+				<td><input type="text" name="nomerhp" class="form-control" placeholder="Masukan No.HP"/></td>
+				</tr>
+				<tr>
+                   	<td><select name="jeniskelamin" class="form-control">
+                        <option selected="selected">===Jenis Kelamin===</option>
+                        <option>Laki-Laki</option>
+                        <option>Perempuan</option>
+            			</select>
+            		</td>
+            	</tr>
+				<tr>
+				<td>
+					<div align="center">
+					<input name="Submit" type="submit" value="Buat User" class="btn btn-success btn-small" />
+					<input type="reset" name="reset" value="Reset" class="btn btn-warning btn-small"/>
+					</div>
+				</td>
+				</tr>
+				</table>
+				</form>
+			</div>
+		</div> 
+	</div> 
