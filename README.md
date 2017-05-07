@@ -2,7 +2,7 @@
 TUBES PROGWEB
 
 SILAPER
-     Silaper adalah sebuah aplikasi berbasis web dan Android yang digunakan 
+     Sebuah aplikasi berbasis web dan Android yang digunakan 
 untuk melayani keluhan masyarakat yang ada di wilayah Kabupaten Bandung.
      Alur kerja dari aplikasi ini adalah dengan cara masyarakat menuliskan 
 keluhannya yang di tujukan kepada salah satu Dinas di pemkab Bandung. Kemudian 
@@ -11,21 +11,21 @@ dinas terkait.
 
 Deskripsi Sistem
 
-- Buat Akun
+- Buat Akun = 
 	menampilkan form pengisian data diri untuk Pembuatan Akun.
-- Login
+- Login = 
 	untuk masuk ke dalam aplikasi web SILAPER>
-- Home
+- Home = 
 	menampilkan semua laporan/keluhan dari seluruh masyarakat yang melapor kepada dinas yang dituju.
-- Pengaduan
+- Pengaduan = 
 	menampilkan form untuk menuliskan semua laporan/keluhan masyarakat.
-- Laporan Saya
+- Laporan Saya = 
 	menampilkan laporan/keluhan yang telah di buat berdasarkan username masyarakat yang melaporakan.
-- about
+- about = 
 	menampilkan deskripsi aplikasi web SILAPER.
-- Contact
+- Contact = 
 	menampilkan form  keluhan jika aplikasi SILAPER ada masalah teknis atau sebagainya.
-- Logout
+- Logout = 
 	untuk keluar dari aplikasi web SILAPER. 
 
 
