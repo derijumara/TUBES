@@ -18,6 +18,7 @@ class Buatakun extends CI_Controller {
 						'email'=> $this->input->post('email'),
 						'nomerhp'=> $this->input->post('nomerhp'),
 						'jeniskelamin'=> $this->input->post('jeniskelamin'));
+		
 				$insert = $this->login_user->insertAkun('user',$data);
 				if ($insert > 0){
 				redirect(base_url('index.php/login'));
