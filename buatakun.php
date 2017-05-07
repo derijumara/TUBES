@@ -15,6 +15,7 @@ class Buatakun extends CI_Controller {
 		$data = array(	
 						'username'=> $this->input->post('username'),
 						'Password'=> md5($this->input->post('password')),
+						// saya menambahkan di bagian sini
 						'email'=> $this->input->post('email'),
 						'nomerhp'=> $this->input->post('nomerhp'),
 						'jeniskelamin'=> $this->input->post('jeniskelamin'));
